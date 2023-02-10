@@ -14,7 +14,7 @@ public class Main {
         String inputStr = "C makes it easy for you to shoot yourself in the foot. C++ makes that harder, but when you do, it blows away your whole leg. (с) Bjarne Stroustrup";
 
         String[] values = inputStr.replaceAll("[^a-zA-Z]+", " ").split("[,\\s]+"); // Прибираємо зайві символи
-        char[] finalArray = new char[values.length]; //[0, 0, 0, 0, 0, 0, 0 ....]
+        char[] finalArray = new char[values.length];
 
         for (int i = 0; i < values.length; i++) {
             finalArray[i] = findFirstUniqueSymbolInWord(values[i]); // Знаходимо перший унікальний символ у слові і зависуємо у масив унікальних символів
